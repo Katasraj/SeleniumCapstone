@@ -1,0 +1,17 @@
+[32mINFO    [0m RegisterCoursesPage:selenium_driver.py:64 Element Found with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] and locatorType: xpath
+[32mINFO    [0m RegisterCoursesPage:selenium_driver.py:84 Clicked on element with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] locatorType: xpath
+[32mINFO    [0m RegisterCoursesPage:selenium_driver.py:64 Element Found with locator: //input[@id='search' and @placeholder='Search Course'] and locatorType: xpath
+[32mINFO    [0m RegisterCoursesPage:selenium_driver.py:93 Sent data on element with locator: //input[@id='search' and @placeholder='Search Course'] locatorType: xpath
+[32mINFO    [0m RegisterCoursesPage:selenium_driver.py:64 Element Found with locator: //button[@type='submit'] and locatorType: xpath
+[32mINFO    [0m RegisterCoursesPage:selenium_driver.py:84 Clicked on element with locator: //button[@type='submit'] locatorType: xpath
+[32mINFO    [0m RegisterCoursesPage:selenium_driver.py:64 Element Found with locator: //div[@class='zen-course-thumbnail'] and locatorType: xpath
+[32mINFO    [0m RegisterCoursesPage:selenium_driver.py:84 Clicked on element with locator: //div[@class='zen-course-thumbnail'] locatorType: xpath
+[32mINFO    [0m RegisterCoursesPage:selenium_driver.py:64 Element Found with locator: //button[contains(text(),'Enroll in Course')] and locatorType: xpath
+[32mINFO    [0m RegisterCoursesPage:selenium_driver.py:84 Clicked on element with locator: //button[contains(text(),'Enroll in Course')] locatorType: xpath
+[32mINFO    [0m RegisterCoursesPage:selenium_driver.py:64 Element Found with locator: //h2[contains(text(),'JavaScript')] and locatorType: xpath
+[32mINFO    [0m RegisterCoursesPage:selenium_driver.py:103 Element Found:
+[32mINFO    [0m TestStatus:teststatus.py:18 ### VERIFICATION SUCCESSFUL :: + Enrolled JS
+[32mINFO    [0m TestStatus:selenium_driver.py:32 Screenshot saved to directory: F:\PycharmProjects\LetsKodeIt_3\base\../screenshots/Enrolled JS.1733155221528.png
+[32mINFO    [0m TestStatus:teststatus.py:51 test_invalidEnrollment ### TEST SUCCESSFUL
+[32mINFO    [0m NavigationPage:selenium_driver.py:64 Element Found with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] and locatorType: xpath
+[32mINFO    [0m NavigationPage:selenium_driver.py:84 Clicked on element with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] locatorType: xpath

@@ -1,0 +1,51 @@
+12/01/2024 02:00:00 PM - NavigationPage - INFO:Element Found with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] and locatorType: xpath
+12/01/2024 02:00:06 PM - NavigationPage - INFO:Clicked on element with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] locatorType: xpath
+12/01/2024 02:00:06 PM - RegisterCoursesPage - INFO:Element Found with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] and locatorType: xpath
+12/01/2024 02:00:07 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] locatorType: xpath
+12/01/2024 02:00:07 PM - RegisterCoursesPage - INFO:Element Found with locator: //input[@id='search' and @placeholder='Search Course'] and locatorType: xpath
+12/01/2024 02:00:07 PM - RegisterCoursesPage - INFO:Sent data on element with locator: //input[@id='search' and @placeholder='Search Course'] locatorType: xpath
+12/01/2024 02:00:07 PM - RegisterCoursesPage - INFO:Element Found with locator: //button[@type='submit'] and locatorType: xpath
+12/01/2024 02:00:07 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //button[@type='submit'] locatorType: xpath
+12/01/2024 02:00:12 PM - RegisterCoursesPage - INFO:Element Found with locator: //div[@class='zen-course-thumbnail'] and locatorType: xpath
+12/01/2024 02:00:15 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //div[@class='zen-course-thumbnail'] locatorType: xpath
+12/01/2024 02:00:15 PM - RegisterCoursesPage - INFO:Element Found with locator: //button[contains(text(),'Enroll in Course')] and locatorType: xpath
+12/01/2024 02:00:22 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //button[contains(text(),'Enroll in Course')] locatorType: xpath
+12/01/2024 02:00:24 PM - RegisterCoursesPage - INFO:Element Found with locator: //h2[contains(text(),'JavaScript')] and locatorType: xpath
+12/01/2024 02:00:24 PM - RegisterCoursesPage - INFO:Element Found:
+12/01/2024 02:00:24 PM - TestStatus - INFO:### VERIFICATION SUCCESSFUL :: + Enrolled JS
+12/01/2024 02:00:24 PM - TestStatus - INFO:Screenshot saved to directory: F:\PycharmProjects\LetsKodeIt_2\base\../screenshots/Enrolled JS.1733041824086.png
+12/01/2024 02:00:24 PM - TestStatus - INFO:test_verifyMultipleCourses ### TEST SUCCESSFUL
+12/01/2024 02:00:26 PM - NavigationPage - INFO:Element Found with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] and locatorType: xpath
+12/01/2024 02:00:28 PM - NavigationPage - INFO:Clicked on element with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] locatorType: xpath
+12/01/2024 02:00:28 PM - RegisterCoursesPage - INFO:Element Found with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] and locatorType: xpath
+12/01/2024 02:00:29 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] locatorType: xpath
+12/01/2024 02:00:29 PM - RegisterCoursesPage - INFO:Element Found with locator: //input[@id='search' and @placeholder='Search Course'] and locatorType: xpath
+12/01/2024 02:00:29 PM - RegisterCoursesPage - INFO:Sent data on element with locator: //input[@id='search' and @placeholder='Search Course'] locatorType: xpath
+12/01/2024 02:00:29 PM - RegisterCoursesPage - INFO:Element Found with locator: //button[@type='submit'] and locatorType: xpath
+12/01/2024 02:00:29 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //button[@type='submit'] locatorType: xpath
+12/01/2024 02:00:34 PM - RegisterCoursesPage - INFO:Element Found with locator: //div[@class='zen-course-thumbnail'] and locatorType: xpath
+12/01/2024 02:01:07 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //div[@class='zen-course-thumbnail'] locatorType: xpath
+12/01/2024 02:01:07 PM - RegisterCoursesPage - INFO:Element Found with locator: //button[contains(text(),'Enroll in Course')] and locatorType: xpath
+12/01/2024 02:01:07 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //button[contains(text(),'Enroll in Course')] locatorType: xpath
+12/01/2024 02:01:12 PM - RegisterCoursesPage - INFO:Element Not Found with locator: //h2[contains(text(),'JavaScript')] and locatorType: xpath
+12/01/2024 02:01:12 PM - RegisterCoursesPage - INFO:Element Not Found:
+12/01/2024 02:01:12 PM - TestStatus - ERROR:### VERIFICATION FAILED :: + Enrolled JS
+12/01/2024 02:01:13 PM - TestStatus - INFO:Screenshot saved to directory: F:\PycharmProjects\LetsKodeIt_2\base\../screenshots/Enrolled JS.1733041872892.png
+12/01/2024 02:01:13 PM - TestStatus - ERROR:test_verifyMultipleCourses ### TEST FAILED
+12/01/2024 02:01:15 PM - NavigationPage - INFO:Element Found with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] and locatorType: xpath
+12/01/2024 02:01:17 PM - NavigationPage - INFO:Clicked on element with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] locatorType: xpath
+12/01/2024 02:01:17 PM - RegisterCoursesPage - INFO:Element Found with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] and locatorType: xpath
+12/01/2024 02:01:18 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] locatorType: xpath
+12/01/2024 02:01:18 PM - RegisterCoursesPage - INFO:Element Found with locator: //input[@id='search' and @placeholder='Search Course'] and locatorType: xpath
+12/01/2024 02:01:18 PM - RegisterCoursesPage - INFO:Sent data on element with locator: //input[@id='search' and @placeholder='Search Course'] locatorType: xpath
+12/01/2024 02:01:18 PM - RegisterCoursesPage - INFO:Element Found with locator: //button[@type='submit'] and locatorType: xpath
+12/01/2024 02:01:18 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //button[@type='submit'] locatorType: xpath
+12/01/2024 02:01:23 PM - RegisterCoursesPage - INFO:Element Found with locator: //div[@class='zen-course-thumbnail'] and locatorType: xpath
+12/01/2024 02:01:25 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //div[@class='zen-course-thumbnail'] locatorType: xpath
+12/01/2024 02:01:28 PM - RegisterCoursesPage - INFO:Element Not Found with locator: //button[contains(text(),'Enroll in Course')] and locatorType: xpath
+12/01/2024 02:01:28 PM - RegisterCoursesPage - INFO:Can not click on the element with locator: //button[contains(text(),'Enroll in Course')] locatorType: xpath
+12/01/2024 02:01:30 PM - RegisterCoursesPage - INFO:Element Found with locator: //h2[contains(text(),'JavaScript')] and locatorType: xpath
+12/01/2024 02:01:30 PM - RegisterCoursesPage - INFO:Element Found:
+12/01/2024 02:01:30 PM - TestStatus - INFO:### VERIFICATION SUCCESSFUL :: + Enrolled JS
+12/01/2024 02:01:30 PM - TestStatus - INFO:Screenshot saved to directory: F:\PycharmProjects\LetsKodeIt_2\base\../screenshots/Enrolled JS.1733041890471.png
+12/01/2024 02:01:30 PM - TestStatus - INFO:test_verifyMultipleCourses ### TEST SUCCESSFUL
