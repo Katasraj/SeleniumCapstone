@@ -45,6 +45,8 @@ class LoginPage(BasePage):
         return result
 
     def clearItem(self,locator,locatorType="id"):
+        # elem = self.waitForElement(locator,locatorType)
+        # print("ELEMENT: ",elem)
         item = self.getElement(locator,locatorType)
         if item:
             item.clear()
@@ -54,12 +56,20 @@ class LoginPage(BasePage):
     def verifyLoginTitle(self):
         return self.verifyPageTitle("Login")
 
-
     def logout(self):
         # logoutLinkElement = self.waitForElement(self.user_icon_dropdown, locatorType='xpath', pollFrequency=1)
         # print("user_icon_dropdown **********", logoutLinkElement)
         self.elementClick(self.locator['user_icon_DropDown_button'],locatorType='xpath')
         self.elementClick(self.locator['logout_loc'],locatorType='xpath')
+
+    def ElementToWait(self,l):
+        #self.waitForElement(locator=self.locator['emialLogin'],locatorType='xpath')
+        print(self.waitForElement(locator=l, locatorType='xpath'))
+
+
+
+    def quitPage(self):
+        self.driver.quit()
 
 
 

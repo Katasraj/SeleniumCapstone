@@ -1,6 +1,0 @@
-Running one time setUp
-Running method level setUp
-JS RESULT ************:  True
-relativeFileName: ************** Enrolled JS.1733155221528.png
-Running method level tearDown
-Running one time tearDown
