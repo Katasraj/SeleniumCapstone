@@ -9,6 +9,7 @@ class Path_Login:
         locators_login['invalid_login'] = "//span[contains(text(),'Incorrect login details')]"
         locators_login['user_icon_DropDown_button'] = "//a[@class='dynamic-link']//span[@class='caret']"
         locators_login['logout_loc'] = "//a[@href='/logout']"
+        locators_login['my_courses'] = "//div[@class='col-md-12']//h1[contains(text(),'My Courses ')]"
 
         return locators_login
 
