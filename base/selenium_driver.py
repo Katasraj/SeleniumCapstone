@@ -110,6 +110,26 @@ class SeleniumDriver:
             self.log.info("Element not found")
             return False
 
+    def isElementDisplayed(self, locator="", locatorType="id", element=None):
+        """
+        NEW METHOD
+        Check if element is displayed
+        Either provide element or a combination of locator and locatorType
+        """
+        isDisplayed = False
+        try:
+            if locator:  # This means if locator is not empty
+                element = self.getElement(locator, locatorType)
+            if element is not None:
+                isDisplayed = element.is_displayed()
+                self.log.info("Element is displayed")
+            else:
+                self.log.info("Element not displayed")
+            return isDisplayed
+        except:
+            print("Element not found")
+            return False
+
     def elementPresenceCheck(self, locator, byType):
 
         try:
@@ -134,7 +154,8 @@ class SeleniumDriver:
                                  ignored_exceptions=[NoSuchElementException,
                                                      ElementNotVisibleException,
                                                      ElementNotSelectableException])
-            element = wait.until(EC.visibility_of_element_located((byType,locator)))
+            #element = wait.until(EC.visibility_of_element_located((byType,locator)))
+            element = wait.until(EC.text_to_be_present_in_element(byType,text=""))
             self.log.info("Element appeared on the web page")
         except:
             self.log.info("Element not appeared on the web page")

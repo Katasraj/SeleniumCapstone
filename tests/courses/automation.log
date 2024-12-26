@@ -1,51 +1,150 @@
-12/01/2024 02:00:00 PM - NavigationPage - INFO:Element Found with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] and locatorType: xpath
-12/01/2024 02:00:06 PM - NavigationPage - INFO:Clicked on element with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] locatorType: xpath
-12/01/2024 02:00:06 PM - RegisterCoursesPage - INFO:Element Found with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] and locatorType: xpath
-12/01/2024 02:00:07 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] locatorType: xpath
-12/01/2024 02:00:07 PM - RegisterCoursesPage - INFO:Element Found with locator: //input[@id='search' and @placeholder='Search Course'] and locatorType: xpath
-12/01/2024 02:00:07 PM - RegisterCoursesPage - INFO:Sent data on element with locator: //input[@id='search' and @placeholder='Search Course'] locatorType: xpath
-12/01/2024 02:00:07 PM - RegisterCoursesPage - INFO:Element Found with locator: //button[@type='submit'] and locatorType: xpath
-12/01/2024 02:00:07 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //button[@type='submit'] locatorType: xpath
-12/01/2024 02:00:12 PM - RegisterCoursesPage - INFO:Element Found with locator: //div[@class='zen-course-thumbnail'] and locatorType: xpath
-12/01/2024 02:00:15 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //div[@class='zen-course-thumbnail'] locatorType: xpath
-12/01/2024 02:00:15 PM - RegisterCoursesPage - INFO:Element Found with locator: //button[contains(text(),'Enroll in Course')] and locatorType: xpath
-12/01/2024 02:00:22 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //button[contains(text(),'Enroll in Course')] locatorType: xpath
-12/01/2024 02:00:24 PM - RegisterCoursesPage - INFO:Element Found with locator: //h2[contains(text(),'JavaScript')] and locatorType: xpath
-12/01/2024 02:00:24 PM - RegisterCoursesPage - INFO:Element Found:
-12/01/2024 02:00:24 PM - TestStatus - INFO:### VERIFICATION SUCCESSFUL :: + Enrolled JS
-12/01/2024 02:00:24 PM - TestStatus - INFO:Screenshot saved to directory: F:\PycharmProjects\LetsKodeIt_2\base\../screenshots/Enrolled JS.1733041824086.png
-12/01/2024 02:00:24 PM - TestStatus - INFO:test_verifyMultipleCourses ### TEST SUCCESSFUL
-12/01/2024 02:00:26 PM - NavigationPage - INFO:Element Found with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] and locatorType: xpath
-12/01/2024 02:00:28 PM - NavigationPage - INFO:Clicked on element with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] locatorType: xpath
-12/01/2024 02:00:28 PM - RegisterCoursesPage - INFO:Element Found with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] and locatorType: xpath
-12/01/2024 02:00:29 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] locatorType: xpath
-12/01/2024 02:00:29 PM - RegisterCoursesPage - INFO:Element Found with locator: //input[@id='search' and @placeholder='Search Course'] and locatorType: xpath
-12/01/2024 02:00:29 PM - RegisterCoursesPage - INFO:Sent data on element with locator: //input[@id='search' and @placeholder='Search Course'] locatorType: xpath
-12/01/2024 02:00:29 PM - RegisterCoursesPage - INFO:Element Found with locator: //button[@type='submit'] and locatorType: xpath
-12/01/2024 02:00:29 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //button[@type='submit'] locatorType: xpath
-12/01/2024 02:00:34 PM - RegisterCoursesPage - INFO:Element Found with locator: //div[@class='zen-course-thumbnail'] and locatorType: xpath
-12/01/2024 02:01:07 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //div[@class='zen-course-thumbnail'] locatorType: xpath
-12/01/2024 02:01:07 PM - RegisterCoursesPage - INFO:Element Found with locator: //button[contains(text(),'Enroll in Course')] and locatorType: xpath
-12/01/2024 02:01:07 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //button[contains(text(),'Enroll in Course')] locatorType: xpath
-12/01/2024 02:01:12 PM - RegisterCoursesPage - INFO:Element Not Found with locator: //h2[contains(text(),'JavaScript')] and locatorType: xpath
-12/01/2024 02:01:12 PM - RegisterCoursesPage - INFO:Element Not Found:
-12/01/2024 02:01:12 PM - TestStatus - ERROR:### VERIFICATION FAILED :: + Enrolled JS
-12/01/2024 02:01:13 PM - TestStatus - INFO:Screenshot saved to directory: F:\PycharmProjects\LetsKodeIt_2\base\../screenshots/Enrolled JS.1733041872892.png
-12/01/2024 02:01:13 PM - TestStatus - ERROR:test_verifyMultipleCourses ### TEST FAILED
-12/01/2024 02:01:15 PM - NavigationPage - INFO:Element Found with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] and locatorType: xpath
-12/01/2024 02:01:17 PM - NavigationPage - INFO:Clicked on element with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] locatorType: xpath
-12/01/2024 02:01:17 PM - RegisterCoursesPage - INFO:Element Found with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] and locatorType: xpath
-12/01/2024 02:01:18 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] locatorType: xpath
-12/01/2024 02:01:18 PM - RegisterCoursesPage - INFO:Element Found with locator: //input[@id='search' and @placeholder='Search Course'] and locatorType: xpath
-12/01/2024 02:01:18 PM - RegisterCoursesPage - INFO:Sent data on element with locator: //input[@id='search' and @placeholder='Search Course'] locatorType: xpath
-12/01/2024 02:01:18 PM - RegisterCoursesPage - INFO:Element Found with locator: //button[@type='submit'] and locatorType: xpath
-12/01/2024 02:01:18 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //button[@type='submit'] locatorType: xpath
-12/01/2024 02:01:23 PM - RegisterCoursesPage - INFO:Element Found with locator: //div[@class='zen-course-thumbnail'] and locatorType: xpath
-12/01/2024 02:01:25 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //div[@class='zen-course-thumbnail'] locatorType: xpath
-12/01/2024 02:01:28 PM - RegisterCoursesPage - INFO:Element Not Found with locator: //button[contains(text(),'Enroll in Course')] and locatorType: xpath
-12/01/2024 02:01:28 PM - RegisterCoursesPage - INFO:Can not click on the element with locator: //button[contains(text(),'Enroll in Course')] locatorType: xpath
-12/01/2024 02:01:30 PM - RegisterCoursesPage - INFO:Element Found with locator: //h2[contains(text(),'JavaScript')] and locatorType: xpath
-12/01/2024 02:01:30 PM - RegisterCoursesPage - INFO:Element Found:
-12/01/2024 02:01:30 PM - TestStatus - INFO:### VERIFICATION SUCCESSFUL :: + Enrolled JS
-12/01/2024 02:01:30 PM - TestStatus - INFO:Screenshot saved to directory: F:\PycharmProjects\LetsKodeIt_2\base\../screenshots/Enrolled JS.1733041890471.png
-12/01/2024 02:01:30 PM - TestStatus - INFO:test_verifyMultipleCourses ### TEST SUCCESSFUL
+12/26/2024 04:38:41 PM - LoginPage - INFO:Element Not Found with locator: //input[@id='email' and @placeholder='Email Address'] and locatorType: xpath
+12/26/2024 04:38:41 PM - LoginPage - INFO:Item not found to clear
+12/26/2024 04:38:41 PM - LoginPage - INFO:Element Found with locator: //a[@href='/login' and text()='Sign In'] and locatorType: xpath
+12/26/2024 04:38:42 PM - LoginPage - INFO:Clicked on element with locator: //a[@href='/login' and text()='Sign In'] locatorType: xpath
+12/26/2024 04:38:42 PM - LoginPage - INFO:Element Found with locator: //input[@id='email' and @placeholder='Email Address'] and locatorType: xpath
+12/26/2024 04:38:43 PM - LoginPage - INFO:Sent data on element with locator: //input[@id='email' and @placeholder='Email Address'] locatorType: xpath
+12/26/2024 04:38:43 PM - LoginPage - INFO:Element Found with locator: //input[@id='login-password'] and locatorType: xpath
+12/26/2024 04:38:43 PM - LoginPage - INFO:Sent data on element with locator: //input[@id='login-password'] locatorType: xpath
+12/26/2024 04:38:43 PM - LoginPage - INFO:Element Found with locator: //button[@type='button' and @id = 'login'] and locatorType: xpath
+12/26/2024 04:38:43 PM - LoginPage - INFO:Clicked on element with locator: //button[@type='button' and @id = 'login'] locatorType: xpath
+12/26/2024 04:38:43 PM - Util - INFO:Actual From Application Web UI --> :: Login
+12/26/2024 04:38:43 PM - Util - INFO:Expected From Application Web UI --> :: Login
+12/26/2024 04:38:43 PM - Util - INFO:### VERIFICATION CONTAINS !!!
+12/26/2024 04:38:47 PM - LoginPage - INFO:Element Found with locator: //button[@type='button' and @id='dropdownMenu1'] and locatorType: xpath
+12/26/2024 04:38:47 PM - LoginPage - INFO:Element Found:
+12/26/2024 04:38:50 PM - RegisterCoursesPage - INFO:Element Found with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] and locatorType: xpath
+12/26/2024 04:38:58 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] locatorType: xpath
+12/26/2024 04:39:00 PM - RegisterCoursesPage - INFO:Element Found with locator: //select[@name='categories']/..//option[contains(text(),'Software Development')] and locatorType: xpath
+12/26/2024 04:39:00 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //select[@name='categories']/..//option[contains(text(),'Software Development')] locatorType: xpath
+12/26/2024 04:39:03 PM - RegisterCoursesPage - INFO:Element Found with locator: //div[@class='col-md-5']//h1[contains(text(),'Software Development')] and locatorType: xpath
+12/26/2024 04:39:03 PM - RegisterCoursesPage - INFO:Element Found:
+12/26/2024 04:39:03 PM - RegisterCoursesPage - DEBUG:In locator condition
+12/26/2024 04:39:03 PM - RegisterCoursesPage - INFO:Element Found with locator: //div[@class='col-md-5']//h1[contains(text(),'Software Development')] and locatorType: xpath
+12/26/2024 04:39:03 PM - RegisterCoursesPage - DEBUG:Before finding text
+12/26/2024 04:39:03 PM - RegisterCoursesPage - DEBUG:After finding element, size is: 31
+12/26/2024 04:39:03 PM - RegisterCoursesPage - INFO:Getting text on element :: 
+12/26/2024 04:39:03 PM - RegisterCoursesPage - INFO:The text is :: 'Category : Software Development'
+12/26/2024 04:39:05 PM - TestStatus - INFO:### VERIFICATION SUCCESSFUL :: + Course Category Verification
+12/26/2024 04:39:05 PM - TestStatus - INFO:Screenshot saved to directory: F:\PycharmProjects\SeleniumCapstone\base\../screenshots/Course Category Verification.1735211345472.png
+12/26/2024 04:39:05 PM - TestStatus - INFO:test_Login_to_page ### TEST SUCCESSFUL
+12/26/2024 04:39:05 PM - RegisterCoursesPage - INFO:Element Found with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] and locatorType: xpath
+12/26/2024 04:39:07 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] locatorType: xpath
+12/26/2024 04:39:09 PM - RegisterCoursesPage - INFO:Element Found with locator: //select[@name='categories']/..//option[contains(text(),'Python')] and locatorType: xpath
+12/26/2024 04:39:09 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //select[@name='categories']/..//option[contains(text(),'Python')] locatorType: xpath
+12/26/2024 04:39:12 PM - RegisterCoursesPage - INFO:Element Found with locator: //div[@class='col-md-5']//h1[contains(text(),'Python')] and locatorType: xpath
+12/26/2024 04:39:12 PM - RegisterCoursesPage - INFO:Element Found:
+12/26/2024 04:39:12 PM - RegisterCoursesPage - DEBUG:In locator condition
+12/26/2024 04:39:12 PM - RegisterCoursesPage - INFO:Element Found with locator: //div[@class='col-md-5']//h1[contains(text(),'Python')] and locatorType: xpath
+12/26/2024 04:39:12 PM - RegisterCoursesPage - DEBUG:Before finding text
+12/26/2024 04:39:12 PM - RegisterCoursesPage - DEBUG:After finding element, size is: 17
+12/26/2024 04:39:12 PM - RegisterCoursesPage - INFO:Getting text on element :: 
+12/26/2024 04:39:12 PM - RegisterCoursesPage - INFO:The text is :: 'Category : Python'
+12/26/2024 04:39:14 PM - TestStatus - INFO:### VERIFICATION SUCCESSFUL :: + Course Category Verification
+12/26/2024 04:39:14 PM - TestStatus - INFO:Screenshot saved to directory: F:\PycharmProjects\SeleniumCapstone\base\../screenshots/Course Category Verification.1735211354654.png
+12/26/2024 04:39:14 PM - TestStatus - INFO:test_Login_to_page ### TEST SUCCESSFUL
+12/26/2024 04:39:14 PM - RegisterCoursesPage - INFO:Element Found with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] and locatorType: xpath
+12/26/2024 04:39:16 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] locatorType: xpath
+12/26/2024 04:39:21 PM - RegisterCoursesPage - INFO:Element Not Found with locator: //select[@name='categories']/..//option[contains(text(),'API Automation1')] and locatorType: xpath
+12/26/2024 04:39:21 PM - RegisterCoursesPage - INFO:Can not click on the element with locator: //select[@name='categories']/..//option[contains(text(),'API Automation1')] locatorType: xpath
+12/26/2024 04:39:27 PM - RegisterCoursesPage - INFO:Element Not Found with locator: //div[@class='col-md-5']//h1[contains(text(),'API Automation1')] and locatorType: xpath
+12/26/2024 04:39:27 PM - RegisterCoursesPage - INFO:Element Not Found:
+12/26/2024 04:39:27 PM - RegisterCoursesPage - DEBUG:In locator condition
+12/26/2024 04:39:30 PM - RegisterCoursesPage - INFO:Element Not Found with locator: //div[@class='col-md-5']//h1[contains(text(),'API Automation1')] and locatorType: xpath
+12/26/2024 04:39:30 PM - RegisterCoursesPage - DEBUG:Before finding text
+12/26/2024 04:39:30 PM - RegisterCoursesPage - ERROR:Failed to get text on element 
+12/26/2024 04:39:30 PM - RegisterCoursesPage - INFO:Element Found with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] and locatorType: xpath
+12/26/2024 04:39:32 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] locatorType: xpath
+12/26/2024 04:39:37 PM - RegisterCoursesPage - INFO:Element Not Found with locator: //select[@name='categories']/..//option[contains(text(),'API Automation1')] and locatorType: xpath
+12/26/2024 04:39:37 PM - RegisterCoursesPage - INFO:Can not click on the element with locator: //select[@name='categories']/..//option[contains(text(),'API Automation1')] locatorType: xpath
+12/26/2024 04:39:43 PM - RegisterCoursesPage - INFO:Element Not Found with locator: //div[@class='col-md-5']//h1[contains(text(),'API Automation1')] and locatorType: xpath
+12/26/2024 04:39:43 PM - RegisterCoursesPage - INFO:Element Not Found:
+12/26/2024 04:39:43 PM - RegisterCoursesPage - DEBUG:In locator condition
+12/26/2024 04:39:46 PM - RegisterCoursesPage - INFO:Element Not Found with locator: //div[@class='col-md-5']//h1[contains(text(),'API Automation1')] and locatorType: xpath
+12/26/2024 04:39:46 PM - RegisterCoursesPage - DEBUG:Before finding text
+12/26/2024 04:39:46 PM - RegisterCoursesPage - ERROR:Failed to get text on element 
+12/26/2024 04:39:46 PM - RegisterCoursesPage - INFO:Element Found with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] and locatorType: xpath
+12/26/2024 04:39:48 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] locatorType: xpath
+12/26/2024 04:39:53 PM - RegisterCoursesPage - INFO:Element Not Found with locator: //select[@name='categories']/..//option[contains(text(),'API Automation1')] and locatorType: xpath
+12/26/2024 04:39:53 PM - RegisterCoursesPage - INFO:Can not click on the element with locator: //select[@name='categories']/..//option[contains(text(),'API Automation1')] locatorType: xpath
+12/26/2024 04:39:59 PM - RegisterCoursesPage - INFO:Element Not Found with locator: //div[@class='col-md-5']//h1[contains(text(),'API Automation1')] and locatorType: xpath
+12/26/2024 04:39:59 PM - RegisterCoursesPage - INFO:Element Not Found:
+12/26/2024 04:39:59 PM - RegisterCoursesPage - DEBUG:In locator condition
+12/26/2024 04:40:02 PM - RegisterCoursesPage - INFO:Element Not Found with locator: //div[@class='col-md-5']//h1[contains(text(),'API Automation1')] and locatorType: xpath
+12/26/2024 04:40:02 PM - RegisterCoursesPage - DEBUG:Before finding text
+12/26/2024 04:40:02 PM - RegisterCoursesPage - ERROR:Failed to get text on element 
+12/26/2024 04:43:16 PM - LoginPage - INFO:Element Not Found with locator: //input[@id='email' and @placeholder='Email Address'] and locatorType: xpath
+12/26/2024 04:43:16 PM - LoginPage - INFO:Item not found to clear
+12/26/2024 04:43:16 PM - LoginPage - INFO:Element Found with locator: //a[@href='/login' and text()='Sign In'] and locatorType: xpath
+12/26/2024 04:43:18 PM - LoginPage - INFO:Clicked on element with locator: //a[@href='/login' and text()='Sign In'] locatorType: xpath
+12/26/2024 04:43:18 PM - LoginPage - INFO:Element Found with locator: //input[@id='email' and @placeholder='Email Address'] and locatorType: xpath
+12/26/2024 04:43:18 PM - LoginPage - INFO:Sent data on element with locator: //input[@id='email' and @placeholder='Email Address'] locatorType: xpath
+12/26/2024 04:43:18 PM - LoginPage - INFO:Element Found with locator: //input[@id='login-password'] and locatorType: xpath
+12/26/2024 04:43:19 PM - LoginPage - INFO:Sent data on element with locator: //input[@id='login-password'] locatorType: xpath
+12/26/2024 04:43:19 PM - LoginPage - INFO:Element Found with locator: //button[@type='button' and @id = 'login'] and locatorType: xpath
+12/26/2024 04:43:19 PM - LoginPage - INFO:Clicked on element with locator: //button[@type='button' and @id = 'login'] locatorType: xpath
+12/26/2024 04:43:19 PM - Util - INFO:Actual From Application Web UI --> :: Login
+12/26/2024 04:43:19 PM - Util - INFO:Expected From Application Web UI --> :: Login
+12/26/2024 04:43:19 PM - Util - INFO:### VERIFICATION CONTAINS !!!
+12/26/2024 04:43:24 PM - LoginPage - INFO:Element Found with locator: //button[@type='button' and @id='dropdownMenu1'] and locatorType: xpath
+12/26/2024 04:43:24 PM - LoginPage - INFO:Element Found:
+12/26/2024 04:43:27 PM - RegisterCoursesPage - INFO:Element Found with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] and locatorType: xpath
+12/26/2024 04:43:33 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] locatorType: xpath
+12/26/2024 04:43:35 PM - RegisterCoursesPage - INFO:Element Found with locator: //select[@name='categories']/..//option[contains(text(),'Software Development')] and locatorType: xpath
+12/26/2024 04:43:35 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //select[@name='categories']/..//option[contains(text(),'Software Development')] locatorType: xpath
+12/26/2024 04:43:38 PM - RegisterCoursesPage - INFO:Element Found with locator: //div[@class='col-md-5']//h1[contains(text(),'Software Development')] and locatorType: xpath
+12/26/2024 04:43:38 PM - RegisterCoursesPage - INFO:Element Found:
+12/26/2024 04:43:38 PM - RegisterCoursesPage - DEBUG:In locator condition
+12/26/2024 04:43:38 PM - RegisterCoursesPage - INFO:Element Found with locator: //div[@class='col-md-5']//h1[contains(text(),'Software Development')] and locatorType: xpath
+12/26/2024 04:43:38 PM - RegisterCoursesPage - DEBUG:Before finding text
+12/26/2024 04:43:38 PM - RegisterCoursesPage - DEBUG:After finding element, size is: 31
+12/26/2024 04:43:38 PM - RegisterCoursesPage - INFO:Getting text on element :: 
+12/26/2024 04:43:38 PM - RegisterCoursesPage - INFO:The text is :: 'Category : Software Development'
+12/26/2024 04:43:40 PM - TestStatus - INFO:### VERIFICATION SUCCESSFUL :: + Course Category Verification
+12/26/2024 04:43:40 PM - TestStatus - INFO:Screenshot saved to directory: F:\PycharmProjects\SeleniumCapstone\base\../screenshots/Course Category Verification.1735211620492.png
+12/26/2024 04:43:40 PM - TestStatus - INFO:test_Login_to_page ### TEST SUCCESSFUL
+12/26/2024 04:43:40 PM - RegisterCoursesPage - INFO:Element Found with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] and locatorType: xpath
+12/26/2024 04:43:42 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] locatorType: xpath
+12/26/2024 04:43:44 PM - RegisterCoursesPage - INFO:Element Found with locator: //select[@name='categories']/..//option[contains(text(),'Python')] and locatorType: xpath
+12/26/2024 04:43:44 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //select[@name='categories']/..//option[contains(text(),'Python')] locatorType: xpath
+12/26/2024 04:43:47 PM - RegisterCoursesPage - INFO:Element Found with locator: //div[@class='col-md-5']//h1[contains(text(),'Python')] and locatorType: xpath
+12/26/2024 04:43:47 PM - RegisterCoursesPage - INFO:Element Found:
+12/26/2024 04:43:47 PM - RegisterCoursesPage - DEBUG:In locator condition
+12/26/2024 04:43:47 PM - RegisterCoursesPage - INFO:Element Found with locator: //div[@class='col-md-5']//h1[contains(text(),'Python')] and locatorType: xpath
+12/26/2024 04:43:47 PM - RegisterCoursesPage - DEBUG:Before finding text
+12/26/2024 04:43:47 PM - RegisterCoursesPage - DEBUG:After finding element, size is: 17
+12/26/2024 04:43:47 PM - RegisterCoursesPage - INFO:Getting text on element :: 
+12/26/2024 04:43:47 PM - RegisterCoursesPage - INFO:The text is :: 'Category : Python'
+12/26/2024 04:43:49 PM - TestStatus - INFO:### VERIFICATION SUCCESSFUL :: + Course Category Verification
+12/26/2024 04:43:49 PM - TestStatus - INFO:Screenshot saved to directory: F:\PycharmProjects\SeleniumCapstone\base\../screenshots/Course Category Verification.1735211629710.png
+12/26/2024 04:43:49 PM - TestStatus - INFO:test_Login_to_page ### TEST SUCCESSFUL
+12/26/2024 04:43:49 PM - RegisterCoursesPage - INFO:Element Found with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] and locatorType: xpath
+12/26/2024 04:43:51 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] locatorType: xpath
+12/26/2024 04:43:53 PM - RegisterCoursesPage - INFO:Element Found with locator: //select[@name='categories']/..//option[contains(text(),'API Automation')] and locatorType: xpath
+12/26/2024 04:43:53 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //select[@name='categories']/..//option[contains(text(),'API Automation')] locatorType: xpath
+12/26/2024 04:43:56 PM - RegisterCoursesPage - INFO:Element Found with locator: //div[@class='col-md-5']//h1[contains(text(),'API Automation')] and locatorType: xpath
+12/26/2024 04:43:56 PM - RegisterCoursesPage - INFO:Element Found:
+12/26/2024 04:43:56 PM - RegisterCoursesPage - DEBUG:In locator condition
+12/26/2024 04:43:56 PM - RegisterCoursesPage - INFO:Element Found with locator: //div[@class='col-md-5']//h1[contains(text(),'API Automation')] and locatorType: xpath
+12/26/2024 04:43:56 PM - RegisterCoursesPage - DEBUG:Before finding text
+12/26/2024 04:43:56 PM - RegisterCoursesPage - DEBUG:After finding element, size is: 25
+12/26/2024 04:43:56 PM - RegisterCoursesPage - INFO:Getting text on element :: 
+12/26/2024 04:43:56 PM - RegisterCoursesPage - INFO:The text is :: 'Category : API Automation'
+12/26/2024 04:43:58 PM - TestStatus - INFO:### VERIFICATION SUCCESSFUL :: + Course Category Verification
+12/26/2024 04:43:58 PM - TestStatus - INFO:Screenshot saved to directory: F:\PycharmProjects\SeleniumCapstone\base\../screenshots/Course Category Verification.1735211638328.png
+12/26/2024 04:43:58 PM - TestStatus - INFO:test_Login_to_page ### TEST SUCCESSFUL
+12/26/2024 04:43:58 PM - RegisterCoursesPage - INFO:Element Found with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] and locatorType: xpath
+12/26/2024 04:44:00 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //a[@href='/courses' and contains(text(),'ALL COURSES')] locatorType: xpath
+12/26/2024 04:44:02 PM - RegisterCoursesPage - INFO:Element Found with locator: //select[@name='categories']/..//option[contains(text(),'Cypress')] and locatorType: xpath
+12/26/2024 04:44:02 PM - RegisterCoursesPage - INFO:Clicked on element with locator: //select[@name='categories']/..//option[contains(text(),'Cypress')] locatorType: xpath
+12/26/2024 04:44:05 PM - RegisterCoursesPage - INFO:Element Found with locator: //div[@class='col-md-5']//h1[contains(text(),'Cypress')] and locatorType: xpath
+12/26/2024 04:44:05 PM - RegisterCoursesPage - INFO:Element Found:
+12/26/2024 04:44:05 PM - RegisterCoursesPage - DEBUG:In locator condition
+12/26/2024 04:44:05 PM - RegisterCoursesPage - INFO:Element Found with locator: //div[@class='col-md-5']//h1[contains(text(),'Cypress')] and locatorType: xpath
+12/26/2024 04:44:05 PM - RegisterCoursesPage - DEBUG:Before finding text
+12/26/2024 04:44:05 PM - RegisterCoursesPage - DEBUG:After finding element, size is: 18
+12/26/2024 04:44:05 PM - RegisterCoursesPage - INFO:Getting text on element :: 
+12/26/2024 04:44:05 PM - RegisterCoursesPage - INFO:The text is :: 'Category : Cypress'
+12/26/2024 04:44:07 PM - TestStatus - INFO:### VERIFICATION SUCCESSFUL :: + Course Category Verification
+12/26/2024 04:44:07 PM - TestStatus - INFO:Screenshot saved to directory: F:\PycharmProjects\SeleniumCapstone\base\../screenshots/Course Category Verification.1735211647434.png
+12/26/2024 04:44:07 PM - TestStatus - INFO:test_Login_to_page ### TEST SUCCESSFUL

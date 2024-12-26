@@ -19,6 +19,7 @@ class LoginPage(BasePage):
         self.locator = Path_Login.login_element_location(self)
 
     def clickSigninLink(self):
+
         self.elementClick(self.locator['signin_link'],locatorType='xpath')
 
     def enterEmail(self,email):
@@ -60,6 +61,21 @@ class LoginPage(BasePage):
         # print("user_icon_dropdown **********", logoutLinkElement)
         self.elementClick(self.locator['user_icon_DropDown_button'],locatorType='xpath')
         self.elementClick(self.locator['logout_loc'],locatorType='xpath')
+
+    def get_username_password(self,user_login_details):
+
+        first_key = next(iter(user_login_details))  # Dynamically get the first key in the dictionary
+
+        l = []
+        j = 0
+        while j < len(user_login_details[first_key]):
+            for i in user_login_details.values():
+                l.append(i[j])
+            j += 1
+        user_pswd_list = []
+        for i in range(0, len(l), 2):
+            user_pswd_list.append(l[i:i + 2])
+        return user_pswd_list
 
 
 

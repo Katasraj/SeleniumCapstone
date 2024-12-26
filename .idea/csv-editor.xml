@@ -3,7 +3,21 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="\testdata.csv">
+        <entry key="F:\PycharmProjects\LetsKodeIt_2\testdata.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\configfiles\drop_down_courses.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\configfiles\testdata.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
