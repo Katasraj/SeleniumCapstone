@@ -16,7 +16,7 @@ pipeline {
         stage('Run Smoke Tests') {
             steps {
                 echo "Running Smoke Tests..."
-                bat 'pytest -vv -s tests/login_tests.py --alluredir=Reports/allure-smoke-results'
+                bat 'pytest -vv -s tests/home/login_tests.py --alluredir=Reports/allure-smoke-results'
 
                 // Archive the Smoke Allure results into a tar.gz file
                 bat 'tar -czvf allure-smoke-report.tar.gz -C Reports allure-smoke-results'
