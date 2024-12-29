@@ -247,54 +247,58 @@ class APIServer:
         self.stop()
 
     def _course_delete_insert(self):
-        self.start()
+        try:
 
-        # Simulate a POST request to insert data
-        url = "http://127.0.0.1:5000/delete_courses"
-        response = requests.delete(url)
-        if response.status_code == 200:
-            #print("Record deleted successfully:", response.json())
-            self.log.info("Record deleted successfully")
-            self.log.info(response.json())
-        else:
-            self.log.info("Error in deleted records")
-            #print("Error:", response.json())
+            self.start()
 
-        url_i = "http://127.0.0.1:5000/insert_record"
-        for c in range(len(self.courses)):
-
-            data = {
-                "username": Path_Login().login_details()['username'],
-                "course_name": self.courses[c],
-                "price": self.prices[c],
-                "subscription_start_date": self.today_date(),
-                "subscription_end_date": self.end_date()
-            }
-            response_i = requests.post(url_i, json=data)
-
-            # Handle the response
-            if response_i.status_code == 201:
-                #print("Record inserted successfully:", response.json())
-                self.log.info("Record inserted successfully")
-                self.log.info(response_i.json())
+            # Simulate a POST request to insert data
+            url = "http://127.0.0.1:5000/delete_courses"
+            response = requests.delete(url)
+            if response.status_code == 200:
+                #print("Record deleted successfully:", response.json())
+                self.log.info("Record deleted successfully")
+                self.log.info(response.json())
             else:
-                self.log.info("Error in inserting Records")
+                self.log.info("Error in deleted records")
                 #print("Error:", response.json())
 
-        url_g = "http://127.0.0.1:5000/get_courses"
-        response_get = requests.get(url_g)
-        if response_get.status_code == 200:
-            self.log.info("Courses got successfully")
-            self.log.info(response_get.json())
-            #print("Record got successfully:", response_get.json())
-        else:
-            self.log.info("Error in getting courses")
-            self.log.info(response_get.json())
-            #print("Error:", response_get.json())
+            url_i = "http://127.0.0.1:5000/insert_record"
+            for c in range(len(self.courses)):
 
+                data = {
+                    "username": Path_Login().login_details()['username'],
+                    "course_name": self.courses[c],
+                    "price": self.prices[c],
+                    "subscription_start_date": self.today_date(),
+                    "subscription_end_date": self.end_date()
+                }
+                response_i = requests.post(url_i, json=data)
 
-        # Stop the server
-        self.stop()
+                # Handle the response
+                if response_i.status_code == 201:
+                    #print("Record inserted successfully:", response.json())
+                    self.log.info("Record inserted successfully")
+                    self.log.info(response_i.json())
+                else:
+                    self.log.info("Error in inserting Records")
+                    #print("Error:", response.json())
+
+            url_g = "http://127.0.0.1:5000/get_courses"
+            response_get = requests.get(url_g)
+            if response_get.status_code == 200:
+                self.log.info("Courses got successfully")
+                self.log.info(response_get.json())
+                #print("Record got successfully:", response_get.json())
+            else:
+                self.log.info("Error in getting courses")
+                self.log.info(response_get.json())
+                #print("Error:", response_get.json())
+
+        except Exception as e:
+            self.log.error(f"An unexpected error occurred: {e}")
+        finally:
+            # Ensure the server is stopped regardless of success or failure
+            self.stop()
 
 #if __name__ == "__main__":
     # u = APIServer()
