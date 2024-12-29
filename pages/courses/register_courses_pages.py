@@ -70,8 +70,15 @@ class RegisterCoursesPage(BasePage):
 
     def findTextonCourse(self,courseName):
         courses = self.courses.courses_location(courseName)
-        element_text = self.isElementPresent(locator=courses['course_text'],locatorType='xpath')
-        return element_text
+        element_text = self.getText(locator=courses['course_text'],locatorType='xpath')
+        element = self.isElementPresent(locator=courses['course_text'],locatorType='xpath')
+        return [element_text,element]
+
+    def get_enrolled_course_name(self,courseName):
+        courses = self.courses.courses_location(courseName)
+        course_text = self.getText(locator=courses['get_enrolled_course_text'], locatorType='xpath')
+        return course_text
+
 
     def enterCardNum(self,num):
         #self.switchToIframe(xpath="//iframe[@name='__privateStripeFrame9353']")

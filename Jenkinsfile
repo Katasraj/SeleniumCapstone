@@ -13,31 +13,37 @@ pipeline {
             }
         }
 
-        stage('Run Smoke and Regression Tests') {
+        stage('Run Smoke Tests') {
             steps {
                 echo "Running Smoke Tests..."
-                bat '''
-                    echo Creating report directories...
-                    if not exist report mkdir report
-                    if not exist report\\smoke mkdir report\\smoke
-                    pytest -m smoke --browser=%BROWSER --alluredir=report/smoke || exit 0
-                '''
+                bat 'pytest -vv -s tests/login_tests.py --alluredir=Reports/allure-smoke-results'
 
-                echo "Running Regression Tests..."
-                bat '''
-                    if not exist report mkdir report
-                    if not exist report\\regression mkdir report\\regression
-                    pytest -m regression --browser=%BROWSER --alluredir=report/regression || exit 0
-                '''
+                // Archive the Smoke Allure results into a tar.gz file
+                bat 'tar -czvf allure-smoke-report.tar.gz -C Reports allure-smoke-results'
             }
         }
 
-        stage('Generate Combined Allure Results') {
+        stage('Run Regression Tests') {
             steps {
-                echo "Generating Combined Allure Results..."
-                bat '''
-                    allure generate report/smoke report/regression --clean -o report/allure-results || exit 1
-                '''
+                echo "Running Regression Tests..."
+                bat 'pytest -m regression --order-scope=session --alluredir=Reports/allure-regression-results'
+
+                // Archive the Regression Allure results into a tar.gz file
+                bat 'tar -czvf allure-regression-report.tar.gz -C Reports allure-regression-results'
+            }
+        }
+
+        stage('Generate Allure Report for Smoke Tests') {
+            steps {
+                echo "Generating Allure Report for Smoke Tests..."
+                allure includeProperties: false, jdk: '', results: [[path: 'Reports/allure-smoke-results']]
+            }
+        }
+
+        stage('Generate Allure Report for Regression Tests') {
+            steps {
+                echo "Generating Allure Report for Regression Tests..."
+                allure includeProperties: false, jdk: '', results: [[path: 'Reports/allure-regression-results']]
             }
         }
     }
@@ -45,18 +51,33 @@ pipeline {
     post {
         success {
             echo "Pipeline completed successfully!"
-            echo "Publishing Allure Report..."
 
-            // Publish Allure Report using Allure Jenkins Plugin
-            allure includeProperties: false, jdk: '',
-                   results: [[path: 'report/allure-results']]
+            // List files to confirm the tar.gz files exist
+            bat 'dir'
+
+            // Send email with both Smoke and Regression Allure report archives attached
+            emailext attachLog: true,
+                     attachmentsPattern: 'allure-smoke-report.tar.gz,allure-regression-report.tar.gz',
+                     body: """
+The Jenkins pipeline has completed successfully.
+Please find the following Allure reports attached:
+- Smoke Tests Report
+- Regression Tests Report
+""",
+                     subject: "Jenkins Pipeline - Success",
+                     to: "naga45@gmail.com"
         }
         failure {
             echo "Pipeline failed! Check the logs for details."
+            // Send email on failure without attachments
+            emailext attachLog: true,
+                     body: "The Jenkins pipeline has failed. Please check the logs for details.",
+                     subject: "Jenkins Pipeline - Failure",
+                     to: "naga45@gmail.com"
         }
         cleanup {
-            echo "Cleaning up workspace..."
-            deleteDir()
+            echo "Cleaning up workspace after email is sent..."
+            deleteDir()  // Cleanup now happens last
         }
     }
 }

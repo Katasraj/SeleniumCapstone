@@ -9,11 +9,14 @@ import requests
 import csv
 import pymysql
 import allure
+import logging
+import utilities.custom_logger as cl
 
 
 
 @allure.description("Verifying Courses availability in MySQL Database ")
 class APIServer:
+    log = cl.customLogger(logging.DEBUG)
     def __init__(self,csv_file_path=None):
         # self.c = c
         # self.p = p
@@ -212,18 +215,22 @@ class APIServer:
     @allure.step("Verifying GET request to check the courses in database")
     def get_courses_from_db(self):
         self.start()
+        try:
+            # Simulate a GET request to retrieve courses
+            url = "http://127.0.0.1:5000/get_courses"
+            response = requests.get(url)
 
-        # Simulate a GET request to retrieve courses
-        url = "http://127.0.0.1:5000/get_courses"
-        res = requests.get(url)
+            # with allure.step("Log response code and enrolled courses"):
+            #     allure.attach(str(res.status_code), name="Response Code", attachment_type=allure.attachment_type.TEXT)
+            #     allure.attach(res.text, name="Response Body", attachment_type=allure.attachment_type.TEXT)
+            self.log.info(response.status_code)
+            self.log.info(response.json())  # If response is in JSON format
+            self.log.info( response.text)  # As plain text
+            self.log.info(response.content)  # As raw bytes
 
-
-        with allure.step("Log response code and enrolled courses"):
-            allure.attach(str(res.status_code), name="Response Code", attachment_type=allure.attachment_type.TEXT)
-            allure.attach(res.text, name="Response Body", attachment_type=allure.attachment_type.TEXT)
-
-        # Stop the server
-        self.stop()
+        finally:
+            # Stop the server
+            self.stop()
 
     def delete_courses_from_db(self):
         self.start()
@@ -246,9 +253,12 @@ class APIServer:
         url = "http://127.0.0.1:5000/delete_courses"
         response = requests.delete(url)
         if response.status_code == 200:
-            print("Record deleted successfully:", response.json())
+            #print("Record deleted successfully:", response.json())
+            self.log.info("Record deleted successfully")
+            self.log.info(response.json())
         else:
-            print("Error:", response.json())
+            self.log.info("Error in deleted records")
+            #print("Error:", response.json())
 
         url_i = "http://127.0.0.1:5000/insert_record"
         for c in range(len(self.courses)):
@@ -260,17 +270,34 @@ class APIServer:
                 "subscription_start_date": self.today_date(),
                 "subscription_end_date": self.end_date()
             }
-            response = requests.post(url_i, json=data)
+            response_i = requests.post(url_i, json=data)
 
             # Handle the response
-            if response.status_code == 201:
-                print("Record inserted successfully:", response.json())
+            if response_i.status_code == 201:
+                #print("Record inserted successfully:", response.json())
+                self.log.info("Record inserted successfully")
+                self.log.info(response_i.json())
             else:
-                print("Error:", response.json())
+                self.log.info("Error in inserting Records")
+                #print("Error:", response.json())
+
+        url_g = "http://127.0.0.1:5000/get_courses"
+        response_get = requests.get(url_g)
+        if response_get.status_code == 200:
+            self.log.info("Courses got successfully")
+            self.log.info(response_get.json())
+            #print("Record got successfully:", response_get.json())
+        else:
+            self.log.info("Error in getting courses")
+            self.log.info(response_get.json())
+            #print("Error:", response_get.json())
+
 
         # Stop the server
         self.stop()
 
-# if __name__ == "__main__":
-#     u = APIServer()
-#     u.use_api_server()
+#if __name__ == "__main__":
+    # u = APIServer()
+    #u.use_api_server()
+    # u.get_courses_from_db()
+

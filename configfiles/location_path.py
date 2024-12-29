@@ -41,10 +41,11 @@ class Path_Login:
         courses_page['search_button'] = "//button[@type='submit']"
         courses_page['required_course'] = "//div[@class='zen-course-thumbnail']"
         courses_page['enroll_button'] = "//button[contains(text(),'Enroll in Course')]"
-        courses_page['course_text'] = "//h2[contains(text(),'JavaScript')]"
+        courses_page['course_text'] = f"//h2[contains(text(),'{courseName}')]"
         courses_page['category'] = "//select[@name='categories']"
         courses_page['drop_down_course'] = f"//select[@name='categories']/..//option[contains(text(),'{courseName}')]"
         courses_page['course_category'] = f"//div[@class='col-md-5']//h1[contains(text(),'{courseName}')]"
+        courses_page['get_enrolled_course_text'] = f"//a[@href]//..//h4[normalize-space(text())='{courseName}']"
 
         return courses_page
 

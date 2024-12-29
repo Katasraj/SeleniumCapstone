@@ -4,14 +4,16 @@ from utilities.read_data import ReadData
 from utilities.teststatus import TestStatus
 from configfiles.location_path import Path_Login
 from pages.home.login_page import LoginPage
-import unittest
 import pytest
 import allure
 import time
+import utilities.custom_logger as cl
+import logging
 
 
 @pytest.mark.usefixtures("oneTimeSetUp", "setUp")
-class LoginTests(unittest.TestCase):
+class TestDropDown:
+    log = cl.customLogger(logging.DEBUG)
 
     @pytest.fixture(autouse=True)
     def objectSetup(self):
@@ -21,6 +23,7 @@ class LoginTests(unittest.TestCase):
         self.locator = Path_Login.login_element_location(self)
         self.login_creds = Path_Login.single_user_login_details(self)
 
+    @pytest.mark.regression
     @pytest.mark.run(order=1)
     @allure.step("Login with username and password")
     def test_Login_to_page(self):
@@ -45,8 +48,10 @@ class LoginTests(unittest.TestCase):
                         self.courses.selectALlCourses()
                     time.sleep(2)
                     with allure.step(f"Selecting Course {courseName} from dropdown"):
+                        self.log.info("Selecting Courses in DropDown")
                         self.courses.selectDropDownCourse(courseName)
                         time.sleep(3)
+                        self.log.info("Verifying Courses")
                         result = self.courses.verifyCourseCategory(courseName)
 
                         course_name_from_page = self.courses.course_category_name(courseName)
@@ -54,11 +59,12 @@ class LoginTests(unittest.TestCase):
                         time.sleep(2)
 
                         # Assert if course name matches
-                        self.assertEqual(
-                            courseName,
-                            course_name_from_page,
-                            f"Course '{courseName}' not matching"
-                        )
+                        assert courseName == course_name_from_page,f"Course Names are not equal. Expected: {course_name_from_page}, Actual: {courseName}"
+                        # self.assertEqual(
+                        #     courseName,
+                        #     course_name_from_page,
+                        #     f"Course '{courseName}' not matching"
+                        # )
 
                         # Mark as final if successful
                         self.ts.markFinal("test_Login_to_page", result, "Course Category Verification")
@@ -79,3 +85,5 @@ class LoginTests(unittest.TestCase):
                         with allure.step(f"Max retries reached for course '{courseName}'"):
                             print(f"Max retries reached for course '{courseName}'. Failing test.")
                             raise e  # Re-raise exception after max retries
+
+

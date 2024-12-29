@@ -5,7 +5,7 @@ import unittest
 import time
 import allure
 import pytest
-# import requests
+import requests
 #
 # @pytest.fixture(scope="class")
 # def api_server():
@@ -17,8 +17,8 @@ import pytest
 # class TestAPIServer:
 #     @allure.step("Verifying GET request to check the courses in database")
 #     def test_get_courses(self, api_server):
-#         url = "http://127.0.0.1:5000/get_courses"
-#         response = requests.get(url)
+#         #url = "http://127.0.0.1:5000/get_courses"
+#         response = APIServer().get_courses_from_db()
 #         assert response.status_code == 200
 
 
@@ -30,7 +30,8 @@ import pytest
 def test_get_courses():
     with allure.step("Get Enrolled Courses"):
         with allure.step("Initiating test to fetch enrolled courses"):
-            APIServer().get_courses_from_db()
+            response = APIServer().get_courses_from_db()
+            assert response.status_code == 200
 
 
 
@@ -39,7 +40,7 @@ def test_get_courses():
 # class TestInsertDB(unittest.TestCase):
 #     # Combine course names and prices into a single list of tuples
 #     @data(*ReadData("F:\\PycharmProjects\\SeleniumCapstone\\testdata.csv").getCombinedData())
-#     @unpack
+#     @
 #     def test_insert_DB(self,courseName,prices):
 #         print(f"Inserting course: {courseName} with price: {prices}")
 #         APIServer(courseName,prices).use_api_server()

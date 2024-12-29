@@ -851,3 +851,36 @@
 12/14/2024 07:01:37 PM - TestStatus - ERROR:test_ValidateLogin ### TEST FAILED
 12/14/2024 07:01:37 PM - TestStatus - INFO:Screenshot saved to directory: F:\PycharmProjects\SeleniumCapstone\base\../screenshots/Login Verification.1734183097351.png
 12/14/2024 07:01:37 PM - TestStatus - ERROR:test_ValidateLogin ### TEST FAILED
+12/29/2024 09:50:18 PM - LoginPage - INFO:Element Not Found with locator: //a[@class='dynamic-link']//span[@class='caret'] and locatorType: xpath
+12/29/2024 09:50:18 PM - LoginPage - INFO:Can not click on the element with locator: //a[@class='dynamic-link']//span[@class='caret'] locatorType: xpath
+12/29/2024 09:50:21 PM - LoginPage - INFO:Element Not Found with locator: //a[@href='/logout'] and locatorType: xpath
+12/29/2024 09:50:21 PM - LoginPage - INFO:Can not click on the element with locator: //a[@href='/logout'] locatorType: xpath
+12/29/2024 09:50:21 PM - LoginPage - INFO:Element Found with locator: //a[@href='/login' and text()='Sign In'] and locatorType: xpath
+12/29/2024 09:50:23 PM - LoginPage - INFO:Clicked on element with locator: //a[@href='/login' and text()='Sign In'] locatorType: xpath
+12/29/2024 09:50:23 PM - LoginPage - INFO:Element Found with locator: //input[@id='email' and @placeholder='Email Address'] and locatorType: xpath
+12/29/2024 09:50:23 PM - LoginPage - INFO:Sent data on element with locator: //input[@id='email' and @placeholder='Email Address'] locatorType: xpath
+12/29/2024 09:50:23 PM - LoginPage - INFO:Element Found with locator: //input[@id='login-password'] and locatorType: xpath
+12/29/2024 09:50:24 PM - LoginPage - INFO:Sent data on element with locator: //input[@id='login-password'] locatorType: xpath
+12/29/2024 09:50:24 PM - LoginPage - INFO:Element Found with locator: //button[@type='button' and @id = 'login'] and locatorType: xpath
+12/29/2024 09:50:24 PM - LoginPage - INFO:Clicked on element with locator: //button[@type='button' and @id = 'login'] locatorType: xpath
+12/29/2024 09:50:24 PM - LoginPage - INFO:Element Found with locator: //span[contains(text(),'Incorrect login details')] and locatorType: xpath
+12/29/2024 09:50:24 PM - LoginPage - INFO:Element Found:
+12/29/2024 09:50:26 PM - LoginPage - INFO:Element Found with locator: //input[@id='email' and @placeholder='Email Address'] and locatorType: xpath
+12/29/2024 09:50:26 PM - LoginPage - INFO:Element Found with locator: //a[@href='/login' and text()='Sign In'] and locatorType: xpath
+12/29/2024 09:50:27 PM - LoginPage - INFO:Clicked on element with locator: //a[@href='/login' and text()='Sign In'] locatorType: xpath
+12/29/2024 09:50:27 PM - LoginPage - INFO:Element Found with locator: //input[@id='email' and @placeholder='Email Address'] and locatorType: xpath
+12/29/2024 09:50:28 PM - LoginPage - INFO:Sent data on element with locator: //input[@id='email' and @placeholder='Email Address'] locatorType: xpath
+12/29/2024 09:50:28 PM - LoginPage - INFO:Element Found with locator: //input[@id='login-password'] and locatorType: xpath
+12/29/2024 09:50:28 PM - LoginPage - INFO:Sent data on element with locator: //input[@id='login-password'] locatorType: xpath
+12/29/2024 09:50:28 PM - LoginPage - INFO:Element Found with locator: //button[@type='button' and @id = 'login'] and locatorType: xpath
+12/29/2024 09:50:28 PM - LoginPage - INFO:Clicked on element with locator: //button[@type='button' and @id = 'login'] locatorType: xpath
+12/29/2024 09:50:28 PM - Util - INFO:Actual From Application Web UI --> :: Login
+12/29/2024 09:50:28 PM - Util - INFO:Expected From Application Web UI --> :: Login
+12/29/2024 09:50:28 PM - Util - INFO:### VERIFICATION CONTAINS !!!
+12/29/2024 09:50:28 PM - TestStatus - INFO:### VERIFICATION SUCCESSFUL :: + Title Verified
+12/29/2024 09:50:28 PM - TestStatus - INFO:Screenshot saved to directory: F:\PycharmProjects\SeleniumCapstone\base\../screenshots/Title Verified.1735489228476.png
+12/29/2024 09:50:31 PM - LoginPage - INFO:Element Found with locator: //button[@type='button' and @id='dropdownMenu1'] and locatorType: xpath
+12/29/2024 09:50:31 PM - LoginPage - INFO:Element Found:
+12/29/2024 09:50:36 PM - TestStatus - INFO:### VERIFICATION SUCCESSFUL :: + Login Verification
+12/29/2024 09:50:36 PM - TestStatus - INFO:Screenshot saved to directory: F:\PycharmProjects\SeleniumCapstone\base\../screenshots/Login Verification.1735489236655.png
+12/29/2024 09:50:36 PM - TestStatus - INFO:test_ValidateLogin ### TEST SUCCESSFUL
